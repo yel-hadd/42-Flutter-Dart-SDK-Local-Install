@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    flutter_init.sh                                    :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yel-hadd <yel-hadd@mail.com>               +#+  +:+       +#+         #
+#    By: ahmaymou <ahmaymou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 18:58:43 by yel-hadd          #+#    #+#              #
-#    Updated: 2022/11/29 18:58:49 by yel-hadd         ###   ########.fr        #
+#    Updated: 2022/11/30 13:11:17 by ahmaymou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-username="yel-hadd"
+username= id -un
 rm -rf "/goinfre/$username/flutter"
 mkdir -p "/goinfre/$username/flutter"
 curl "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.3.9-stable.zip" -o "/goinfre/$username/flutter.zip"
