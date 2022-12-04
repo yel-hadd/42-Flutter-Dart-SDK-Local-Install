@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-username= id -un
+username = "yel-hadd"
 rm -rf "/goinfre/$username/flutter"
 mkdir -p "/goinfre/$username/flutter"
 curl "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.3.9-stable.zip" -o "/goinfre/$username/flutter.zip"
