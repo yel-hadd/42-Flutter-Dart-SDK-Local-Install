@@ -6,7 +6,15 @@ Due to the school's limitations on privileges and session storage (5 Gb), I have
 The script will skip installation if Dart & Flutter SDKs are already present.
 
 # Usage
-Just add the following line to ```~/.zshrc``` file
+We will configure the script so it will run on each new session, if Flutter or Dart are missing it will be installed automatically.
+
+Run the following commands to install and configure the script to run at startup
+
 ```bash
-zsh ~/path/to/script/flutter_init.sh
+git clone https://github.com/yel-hadd/42-Flutter-Dart-SDK-Local-Install.git flutter_script
+cd flutter_script
+script_dir=$(pwd)
+script_path="$script_dir/flutter_init.sh"
+chmod +x $script_path
+echo $script_path >> ~/.zshrc
 ```
